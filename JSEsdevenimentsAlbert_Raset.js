@@ -1,13 +1,8 @@
-//Exercici 1
-var button = document.getElementById('boto')
-button.addEventListener('mousedown', blau)
-button.addEventListener('mouseup', taronja)
-document.body.style.backgroundColor = 'green';
-
-function taronja() {
-    document.body.style.backgroundColor = 'orange';
+//Exercici 2
+document.onkeydown=function(lletra){
+    document.getElementById('teclat').innerHTML=lletra.key;
 }
 
-function blau() {
-    document.body.style.backgroundColor = 'blue';
+document.onkeyup=function(){
+    document.getElementById('teclat').innerHTML=' ';
 }
